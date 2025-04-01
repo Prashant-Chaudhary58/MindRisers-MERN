@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 800px;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-areas:
+             "header header header"
+             "sidebar content content"
+             "sidebar content content"
+             "footer footer footer"
+            ;
+            grid-template-rows: repeat(4,150px);
+            gap: 20px;
+        }
+        .card{
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .card1{
+            background-color: rgb(239, 102, 218);
+            grid-area: header;
+        }
+        .card2{
+            background-color: rgb(239, 102, 218);
+            grid-area: sidebar;
+        }
+        .card3{
+            background-color: rgb(239, 102, 218);
+            grid-area: content;
+        }
+        .card4{
+            background-color: rgb(239, 102, 218);
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1">Header</div>
+        <div class="card card2">sidebar</div>
+        <div class="card card3">content</div>
+        <div class="card card4">footer</div>
+    </div>
+</body>
+</html>

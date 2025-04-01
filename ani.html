@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bx {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: background-color 0.5s ease;
+        animation: ani 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+      }
+      @keyframes ani {
+        10% {
+          background-color: rgb(47, 255, 0);
+          margin-right: 200px;
+        }
+        20% {
+          background-color: rgb(37, 12, 232);
+          margin-bottom: 200px;
+        }
+        50% {
+          background-color: yellow;
+          margin-left: 200px;
+        }
+        100% {
+          background-color: red;
+          margin-top: 200px;
+        }
+      }
+      .bx1 {
+        width: 200px;
+        height: 200px;
+        /* background-color: green;
+            background: linear-gradient(90deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4), rgba(0, 0, 255, 0.4)); */
+        background: #525252; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #3db441,
+          #525252
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #3d72b4,
+          #c41818
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      img{
+        filter: grayscale(10%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx"></div>
+    <div class="bx1"></div>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+  </body>
+</html>

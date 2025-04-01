@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            max-width: 100px;
+            /* justify-content: center; */
+            grid-auto-rows: 200px 100px 100px 200px;
+        }
+       .items {
+        width: 100px;
+        /* height: 100px; */
+        border: 2px solid black;
+        background:linear-gradient(45deg, #f3ec78, #af4261, rgba(255, 255, 25));
+       }
+       /* .item1{
+         height: 200px;
+       } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1"> Box 1</div>
+        <div class="items item2">Box 2</div>
+        <div class="items item3">Box 3</div>
+        <div class="items item4"> Box 4</div>
+        <div class="items item5"> Box 5</div>
+        <div class="items item6">Box 6</div>
+        <div class="items item7">Box 7</div>
+        <div class="items item8">Box 8</div>
+    </div>
+    
+</body>
+</html>

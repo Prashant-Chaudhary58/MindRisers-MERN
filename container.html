@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /*  (doesnot allows to increase height and width of the element automatically when  padding is given) */
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        position: sticky;
+        top: 0;
+        /* background-color: red; */
+        background-color: rgba(190, 180, 199, 0.4);
+        transition: background-color 1s;
+        border: 2px solid blue;
+        border-radius: 50%;
+        margin-left: 40%;
+      }
+      .box:hover {
+        background-color: rgb(241, 238, 18);
+      }
+      .box h1 {
+        position: absolute;
+        text-align: center;
+        /* margin-top: 30px; */
+        text-shadow: 6px 15px 2px rgb(37, 228, 15);
+        text-decoration: dashed 2px red;
+        font-family: "Tektur", sans-serif;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(190, 180, 199, 0.4);
+        border: 2px solid blue;
+      }
+      .container-1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(190, 180, 199);
+        border: 2px solid blue;
+        position: absolute;
+      }
+      .container-2 {
+        top: 200px;
+        left: 200px;
+        background-color: greenyellow;
+        transition: background-color 1s;
+        position: relative;
+      }
+      .container-3 {
+        position: relative;
+        top: 200px;
+        left: 400px;
+        background-color: rgb(233, 16, 175);
+        transition: background-color 1s;
+      }
+      .container:hover {
+        background-color: rgb(14, 251, 219);
+      }
+
+      .newcontainer1 {
+        margin-top: 15%;
+        width: 450px;
+        height: 450px;
+        background-color: rgba(190, 180, 199, 0.4);
+        border: 2px solid blue;
+        position: absolute;
+        z-index: 1;
+      }
+        .newcontainer2 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(135, 11, 243);
+            border: 2px solid blue;
+            position: relative;
+        }
+        .newcontainer3 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(56, 4, 101);
+            border: 2px solid blue;
+            position: relative;
+            left: 150px;
+        }
+        .newcontainer4 {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(8, 235, 46);
+            border: 2px solid blue;
+            position: relative;
+            left: 300px;
+        }
+
+        p{
+          font-family: 'Bytesized', sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Hello there</h1>
+    </div>
+
+    <div class="container container-1"></div>
+    <div class="container container-2"></div>
+    <div class="container container-3"></div>
+
+
+    <div class="newcontainer1">
+
+        <div class="newcontainer2"></div>
+        <div class="newcontainer3"></div>
+        <div class="newcontainer4"></div>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa saepe perferendis voluptatem?</p>
+    </div>
+  </body>
+</html>

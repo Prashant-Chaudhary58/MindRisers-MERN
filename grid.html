@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid works</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        .items {
+            width: 220px;
+            height: 350px;
+            background:linear-gradient(45deg, #f3ec78, #af4261, rgba(255, 255, 25));
+            border: 2px solid black;
+            /* font-size: 2em; */
+            
+        }
+        img{
+            width: 217px;
+            height: 200px;
+        }
+        h1{
+            text-align: center;
+            color: #f1f1f1;
+            background: linear-gradient(45deg, #f3ec78, #af4261, rgba(255, 255, 25));
+            padding: 10px;
+        }
+        .item1{
+            display: grid;
+            grid-template-columns: auto;
+             
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Marval movies card</h1>
+    <div class="container">
+        <div class="items item1">
+            <img src="https://musicart.xboxlive.com/7/98013000-0000-0000-0000-000000000002/504/image.jpg" alt="civil war">
+            <h4>Civil war</h4>
+            <p>A tense, dystopian thriller set in a near-future America torn by civil war, following journalists documenting the conflict.</p>
+            <button>watch now</button>
+        </div>
+        <div class="items item2">
+            <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/10/IMG_1875.jpeg" alt="Avengers endgame">
+            <h4>Avengers Endgame</h4>
+            <p>A thrilling culmination of the MCU saga where the Avengers unite for a final battle against Thanos to restore the universe.</p>
+        </div>
+        <div class="items item3">
+            <img src="https://pbs.twimg.com/media/FZu-6sGXwAEgG4Z.jpg:large" alt="Age of Ultron">
+            <h4>Age of Ultron</h4>
+            <p>The Avengers face Ultron, an AI villain bent on human extinction, leading to epic battles and the rise of new heroes.</p>
+        </div>
+        <div class="items item4">
+            <img src="https://ntvb.tmsimg.com/assets/p12402331_v_h8_am.jpg?w=1280&h=720" alt="Thor Ragnarok">
+            <h4>Thor Ragnarok</h4>
+            <p>Thor, the god of thunder, faces the dark side of the Force and must confront his past, including his own father, Odin and his brother, Loki.</p>
+        </div>
+        <div class="items item5">
+            <img src="https://m.media-amazon.com/images/I/81-jM17HvRL.jpg" alt="Iron man 3">
+            <h4>Iron Man 3</h4>
+            <p>Tony Stark faces a new enemy, the Mandarin, who threatens to destroy everything he holds dear, leading to a battle for survival.</p>
+        </div>
+        <div class="items item6">
+            <img src="https://cdna.artstation.com/p/assets/images/images/045/611/350/large/kevinn-gonzalez-dr-doom-dia1final.jpg?1643131212" alt=" Dr Doom">
+            <h4>Dr Doom</h4>
+            <p>Dr Doom, the ruler of Latveria, faces the Fantastic Four and the Avengers in a battle for control of the universe.</p>
+        </div>
+        <div class="items item1">
+            <img src="https://musicart.xboxlive.com/7/98013000-0000-0000-0000-000000000002/504/image.jpg" alt="civil war">
+            <h4>Civil war</h4>
+            <p>A tense, dystopian thriller set in a near-future America torn by civil war, following journalists documenting the conflict.</p>
+        </div>
+        <div class="items item2">
+            <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/10/IMG_1875.jpeg" alt="Avengers endgame">
+            <h4>Avengers Endgame</h4>
+            <p>A thrilling culmination of the MCU saga where the Avengers unite for a final battle against Thanos to restore the universe.</p>
+        </div>
+        <div class="items item3">
+            <img src="https://pbs.twimg.com/media/FZu-6sGXwAEgG4Z.jpg:large" alt="Age of Ultron">
+            <h4>Age of Ultron</h4>
+            <p>The Avengers face Ultron, an AI villain bent on human extinction, leading to epic battles and the rise of new heroes.</p>
+        </div>
+        <div class="items item4">
+            <img src="https://ntvb.tmsimg.com/assets/p12402331_v_h8_am.jpg?w=1280&h=720" alt="Thor Ragnarok">
+            <h4>Thor Ragnarok</h4>
+            <p>Thor, the god of thunder, faces the dark side of the Force and must confront his past, including his own father, Odin and his brother, Loki.</p>
+        </div>
+        <div class="items item5">
+            <img src="https://m.media-amazon.com/images/I/81-jM17HvRL.jpg" alt="Iron man 3">
+            <h4>Iron Man 3</h4>
+            <p>Tony Stark faces a new enemy, the Mandarin, who threatens to destroy everything he holds dear, leading to a battle for survival.</p>
+        </div>
+        <div class="items item6">
+            <img src="https://cdna.artstation.com/p/assets/images/images/045/611/350/large/kevinn-gonzalez-dr-doom-dia1final.jpg?1643131212" alt=" Dr Doom">
+            <h4>Dr Doom</h4>
+            <p>Dr Doom, the ruler of Latveria, faces the Fantastic Four and the Avengers in a battle for control of the universe.</p>
+        </div>
+        <!-- <div class="items"></div> -->
+    </div>
+</body>
+</html>

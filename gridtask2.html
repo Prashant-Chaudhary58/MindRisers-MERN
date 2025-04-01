@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 800px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: 
+                "header1 header2 header2 header3 header3 "
+                "nav main main subcontent subcontent"
+                "nav main main subcontent subcontent"
+                "footer1 footer2 footer2 footer3 footer3";
+            grid-template-rows: repeat(4, 100px);
+            /* justify-content: center; */
+        }
+        .childs{
+            border: 2px solid black;
+        }
+        .child1{
+            background-color: brown;
+            grid-area: header1;
+        }
+        .child2{
+            background-color: rgb(87, 221, 30);
+            grid-area: header2;
+        }
+        .child3{
+            background-color: rgb(16, 62, 213);
+            grid-area: header3;
+        }
+        .child4{
+            background-color: rgb(189, 22, 100);
+            grid-area: nav;
+        }
+        .child5{
+            background-color: rgb(227, 217, 20);
+            grid-area: main;
+        }
+        .child6{
+            background-color: rgb(227, 217, 20);
+            grid-area: subcontent;
+        }
+        .child7{
+            background-color: rgb(227, 217, 20);
+            grid-area: footer1;
+        }
+        .child8{
+            background-color: rgb(227, 217, 20);
+            grid-area: footer2;
+        }
+        .child9{
+            background-color: rgb(227, 217, 20);
+            grid-area: footer3;
+        }
+        @media(max-width:500px){
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childs child1">Box 1</div>
+        <div class="childs child2">Box 2</div>
+        <div class="childs child3">Box 3</div>
+        <div class="childs child4">Box 4</div>
+        <div class="childs child5">Box 5</div>
+        <div class="childs child6">Box 6</div>
+        <div class="childs child7">Box 7</div>
+        <div class="childs child8">Box 8</div>
+        <div class="childs child9">Box 9</div>
+    </div>
+</body>
+</html>
